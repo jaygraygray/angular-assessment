@@ -11,10 +11,13 @@
         <!--Here is your header with the navigation nested inside -->
         <header class="site-header" role="banner">
             <div class="container">
-              <!--Insert Logo directive here -->
+              <logo class="logo"></logo>
                 <nav class="site-nav">
                     <ul class="primary-nav">
-                        <!-- Navs go here -->
+                        <li><a ui-sref="home">Home</a></li>
+                        <li><a ui-sref="about">About</a></li>
+                        <li><a ui-sref="blog">Blog</a></li>
+                        <li><a ui-sref="shop">Shop</a></li>
                     </ul>
                 </nav>
                 <button class="hamburger toggle-nav js-toggle-nav" ng-click="showNav">
@@ -27,7 +30,7 @@
         <!--This is the main wrapper -->
         <main class="site-main" role="main">
 
-        <!--Views go here -->
+        <ui-view></ui-view>
 
         </main>
         </div>
@@ -36,6 +39,9 @@
 <!--ADD ALL YOUR SCRIPTS HERE -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
-
+<script src="/app.js"></script>
+<script src="/shopService.js"></script>
+<script src="/shopCtrl.js"></script>
+<script src="/productDetailsCtrl.js"></script>
 </body>
 </html>
